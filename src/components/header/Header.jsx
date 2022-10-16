@@ -7,8 +7,8 @@ function Header() {
 	}
 	return (
 		<div className={'header'}>
-			<Button>Закрыть </Button>
-			<span className={'username'}></span>
+			<Button onClick={onClose}>Закрыть </Button>
+			<span className={'username'}>{tg.initDataUnsafe?.user?.username}</span>
 		</div>
 	)
 }
